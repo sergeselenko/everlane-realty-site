@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tell me your situation — Everlane Realty | Serge Osaulenko</title>
+  <meta name="description" content="A few quick questions and I'll come back with a clear, honest plan — buying, selling, or figuring out your options.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./index.html">
+        <span class="brand__name">Everlane Realty</span>
+        <span class="brand__agent">Serge Osaulenko, Realtor&reg;</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" data-nav-toggle>&#9776;</button>
+      <nav class="nav" data-nav>
+        <a href="./index.html#idx-search">Search Listings</a>
+        <a href="./index.html#alerts">New-Listing Alerts</a>
+        <a href="./intake.html?topic=home-value">What's My Home Worth?</a>
+        <a href="./index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="wrap form-wrap">
+      <p class="eyebrow">No pitch &mdash; a real plan</p>
+      <h1 data-intake-title>Tell me your situation.</h1>
+      <p class="lede" data-intake-lede>Give me the messy version &mdash; I&rsquo;ll make it clear. A few quick questions and I&rsquo;ll come back with an honest, comprehensive plan. Buying, selling, or just weighing your options.</p>
+
+      <div class="form-status" data-form-status role="status" aria-live="polite"></div>
+
+      <form id="intake-form" novalidate>
+        <div class="hp" aria-hidden="true">
+          <label>Leave this field empty<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <div class="field">
+          <label for="name">Your name <span class="hint">&mdash; so I know who I&rsquo;m helping</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="grid grid--2">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Cell <span class="hint">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="situation">What&rsquo;s the situation you&rsquo;d like a clear plan on?</label>
+          <textarea id="situation" name="situation" placeholder="Tell me the messy version — I'll make it clear." required></textarea>
+        </div>
+
+        <div class="field">
+          <label>Is this mostly about&hellip;</label>
+          <div class="radio-row">
+            <label><input type="radio" name="about" value="home" required> A home or property decision</label>
+            <label><input type="radio" name="about" value="business"> My business</label>
+            <label><input type="radio" name="about" value="other"> Something else</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="outcome">What would a great outcome look like for you?</label>
+          <textarea id="outcome" name="outcome" placeholder="The real goal, in your words."></textarea>
+        </div>
+
+        <div class="field">
+          <label for="context">Anything I should know? <span class="hint">&mdash; timeline, constraints, what you&rsquo;ve already tried</span></label>
+          <textarea id="context" name="context" placeholder="Optional, but helpful."></textarea>
+        </div>
+
+        <input type="hidden" name="topic" value="" data-topic-field>
+        <input type="hidden" name="source" value="intake-form">
+
+        <p class="consent-note">By sending this, you&rsquo;re asking Serge Osaulenko (Everlane Realty) to follow up about your request. Your details are used only to prepare and discuss your plan &mdash; never sold or shared. You can ask to be removed anytime.</p>
+
+        <button type="submit" class="btn btn--primary btn--block" data-submit>Send it to Serge</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__legal" style="border:0;margin:0;padding:0">
+        <div class="footer-brand__name">Everlane Realty</div>
+        <div class="footer-brand__agent">Serge Osaulenko, Licensed Real Estate Agent &middot; <a href="mailto:serge@everlanerealty.com">serge@everlanerealty.com</a></div>
+        <p style="margin-top:10px"><span class="placeholder">[ Brokerage mailing address &amp; phone — operator confirm ]</span> &middot; <span class="placeholder">[ FL license # ]</span></p>
+        <p class="fairhousing">&#127968; Equal Housing Opportunity. Brokerage identification per FREC 61J2&#8209;10.025.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/site.js" defer></script>
+</body>
+</html>
