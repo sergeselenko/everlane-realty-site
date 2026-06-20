@@ -5,23 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Everlane Realty — Find Your Next Home | Serge Osaulenko</title>
   <meta name="description" content="Search every home on the market, get new-listing alerts the moment they hit, and find out what your home is worth — with Serge Osaulenko at Everlane Realty.">
-  <link rel="preconnect" href="https://everlanerealty.com">
+  <link rel="preconnect" href="https://everlanerealty.idxbroker.com">
   <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
 
-  <!-- ============ DYNAMIC HEADER (consistent across site + IDX wrapper) ============ -->
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="./index.html">
         <span class="brand__name">Everlane Realty</span>
-        <span class="brand__agent">Serge Osaulenko, Realtor®</span>
+        <span class="brand__agent">Serge Osaulenko, Realtor&reg;</span>
       </a>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false" data-nav-toggle>&#9776;</button>
       <nav class="nav" data-nav>
-        <!-- Search/Listings point to the IDX-hosted, Dynamic-Wrapper-branded pages.
-             Operator: replace # with the IDX system/saved-link URLs from your IDX dashboard. -->
-        <a href="#idx-search">Search Listings</a>
+        <a href="#search">Search Listings</a>
         <a href="#alerts">New-Listing Alerts</a>
         <a href="./intake.html?topic=home-value">What's My Home Worth?</a>
         <a href="./intake.html">Contact</a>
@@ -32,66 +29,58 @@
 
   <main>
 
-    <!-- ============ HERO + IDX SEARCH OMNIBAR ============ -->
-    <section class="hero" id="idx-search">
+    <section class="hero">
       <div class="wrap">
         <p class="eyebrow" style="color:var(--accent)">Everlane Realty</p>
         <h1>Find your next home the moment it hits the market.</h1>
         <p>Search every active listing, save your search, and get alerted before the rest of the market sees it. Real MLS data, no middleman &mdash; with a Realtor who actually picks up the phone.</p>
-
-        <!-- IDX WIDGET SLOT #1 — Search Omnibar (Quick Search) -->
-        <div class="idx-slot" id="idx-widget-omnibar" aria-label="Property search">
-          <!-- OPERATOR: paste the IDX "Omnibar / Quick Search" widget <script> snippet here
-               (IDX dashboard → Design → Widgets → Omnibar). Until then this slot shows the note below. -->
-          <strong>Search by city, ZIP, address, or MLS #</strong>
-          <div class="idx-note">IDX search widget mounts here &mdash; pasted from the IDX dashboard at the wrapper-registration handshake.</div>
-        </div>
-
         <div class="hero__ctas">
-          <a class="btn btn--primary" href="#alerts">Set up new-listing alerts</a>
+          <a class="btn btn--primary" href="#search">Search the map</a>
           <a class="btn btn--ghost" href="./intake.html">Talk to Serge</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ FEATURED / NEW LISTINGS ============ -->
+    <section class="section section--mist" id="search">
+      <div class="wrap">
+        <p class="eyebrow">Every home on the market</p>
+        <h2>Search by map, city, or ZIP</h2>
+        <p class="lede">Live MLS listings, updated continuously. Pan the map, filter, and save what you find &mdash; saving a search is how you turn on new-listing alerts.</p>
+        <div class="idx-slot" id="idx-widget-search" style="margin-top:22px;min-height:520px;padding:0;border-style:solid">
+          <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-152208" src="//everlanerealty.idxbroker.com/idx/widgets/152208"></script>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="wrap">
         <p class="eyebrow">Fresh on the market</p>
         <h2>Featured &amp; just-listed homes</h2>
         <p class="lede">Hand-picked active listings, updated automatically from the MLS.</p>
-
-        <!-- IDX WIDGET SLOT #2 — Featured / Active Listings carousel -->
-        <div class="idx-slot" id="idx-widget-featured" style="margin-top:22px">
-          <!-- OPERATOR: paste the IDX "Featured Listings" / "Showcase" widget <script> snippet here. -->
-          <div class="idx-note">IDX featured-listings widget mounts here. MLS data stays IDX-hosted (compliant), SEO-indexable, auto-updating.</div>
+        <div class="idx-slot" id="idx-widget-featured" style="margin-top:22px;padding:0;border-style:solid">
+          <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-152207" src="//everlanerealty.idxbroker.com/idx/widgets/152207"></script>
         </div>
       </div>
     </section>
 
-    <!-- ============ NEW-LISTING ALERT / SAVED-SEARCH REGISTRATION (the consent rebuild) ============ -->
     <section class="section section--mist" id="alerts">
       <div class="wrap">
         <div class="grid grid--2" style="align-items:center">
           <div>
             <p class="eyebrow">Never miss the right one</p>
             <h2>Get new listings the day they hit &mdash; free.</h2>
-            <p class="lede">Tell us what you're looking for and we'll email you the moment a matching home comes on the market. Save searches, track price changes, favorite homes &mdash; all in one place.</p>
-            <p style="font-size:.9rem;color:var(--slate)">Registering creates your own account and your consent to receive listing alerts. Unsubscribe anytime, one click.</p>
+            <p class="lede">Run a search above, then <strong>save it</strong> &mdash; we'll email you the moment a matching home comes on the market. Save searches, track price changes, and favorite homes, all in one free account.</p>
+            <p style="font-size:.9rem;color:var(--slate)">Saving a search creates your free account and your consent to receive listing alerts. Unsubscribe anytime, one click.</p>
           </div>
-
-          <!-- IDX WIDGET SLOT #3 — Saved Search / Lead Registration form (feeds IDX → WF1b poll → owned store) -->
-          <div class="idx-slot" id="idx-widget-register">
-            <!-- OPERATOR: paste the IDX "Saved Search Sign-up" / "Lead Capture" widget <script> snippet here.
-                 Registrations flow to IDX, are polled by n8n WF1b, and upsert to the owned store + the consented sending subset. -->
-            <strong>Create your listing-alert account</strong>
-            <div class="idx-note">IDX saved-search registration widget mounts here &mdash; this is the clean, owned re-opt-in that rebuilds the consent trail.</div>
+          <div class="card" id="idx-widget-register">
+            <strong>Save your search, get the alerts</strong>
+            <p style="margin-top:8px;color:var(--slate)">Search the map, then hit save &mdash; you'll get an email the moment a new match lists. Creating your free account takes a few seconds.</p>
+            <a class="btn btn--primary btn--block" href="#search" style="margin-top:14px">Start searching</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ HOME-VALUATION CTA (SB-1 — CAPTURE ONLY, alongside the buyer CTAs) ============ -->
     <section class="section">
       <div class="wrap">
         <div class="card grid grid--2" style="align-items:center;box-shadow:var(--shadow)">
@@ -108,7 +97,6 @@
       </div>
     </section>
 
-    <!-- ============ BUYER-CONSULT BOOKING CTA ============ -->
     <section class="section cta-band">
       <div class="wrap center">
         <p class="eyebrow" style="color:var(--accent)">No-pressure, genuinely useful</p>
@@ -123,7 +111,6 @@
 
   </main>
 
-  <!-- ============ DYNAMIC FOOTER (brokerage identification — FREC + CAN-SPAM) ============ -->
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
@@ -139,7 +126,7 @@
         <div class="footer">
           <h4>Explore</h4>
           <ul>
-            <li><a href="#idx-search">Search Listings</a></li>
+            <li><a href="#search">Search Listings</a></li>
             <li><a href="#alerts">New-Listing Alerts</a></li>
             <li><a href="./intake.html?topic=home-value">What's My Home Worth?</a></li>
             <li><a href="./intake.html">Contact Serge</a></li>
