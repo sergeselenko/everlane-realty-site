@@ -3,11 +3,11 @@
 (function () {
   "use strict";
 
-  /* ---- RLS HARD GATE: form collects/sends NOTHING until the n8n sink is
-     built and store RLS re-verified GREEN + zero-PII. Flip FORM_LIVE + set
-     INTAKE_ENDPOINT only after validate-by-running passes. ---- */
-  var FORM_LIVE = false;
-  var INTAKE_ENDPOINT = "";
+  /* ---- FORM LIVE (go-live 2026-06-23): captures to the RLS-locked n8n sink
+     (re-floor-store). Flipped after store RLS re-verified GREEN + zero-PII and
+     the n8n intake sink was activated. ---- */
+  var FORM_LIVE = true;
+  var INTAKE_ENDPOINT = "https://selenko.app.n8n.cloud/webhook/intake-everlane";
 
   var MAILTO = '<a href="mailto:serge@everlanerealty.com">serge@everlanerealty.com</a>';
 
