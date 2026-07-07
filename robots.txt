@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /intake.html
+Disallow: /wrapper.html
 
 Sitemap: https://everlanerealty.com/sitemap.xml
