@@ -72,8 +72,7 @@ img { max-width: 100%; height: auto; display: block; }
 .nav-toggle { display: none; background: none; border: 0; font-size: 1.5rem; color: var(--navy); cursor: pointer; }
 
 .hero {
-  background: linear-gradient(180deg, rgba(16,42,67,.78), rgba(16,42,67,.86)),
-              url("./assets/hero.jpg") center/cover no-repeat, var(--navy);
+  background: linear-gradient(180deg, rgba(16,42,67,.78), rgba(16,42,67,.86)), var(--navy);
   color: var(--white); padding: clamp(56px, 10vw, 120px) 0;
 }
 .hero h1 { color: var(--white); max-width: 18ch; }
