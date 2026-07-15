@@ -1,2 +1,5 @@
 # everlane-realty-site
-Everlane Realty — Claude-built IDX landing site + intake form (everlanerealty.com). Static, mobile-responsive; IDX Broker Dynamic Wrapper + Widgets; intake form posts to an n8n webhook sink (RLS-gated re-floor-store).
+
+Built output of the Eleventy source in sergeselenko/everlane-realty-preview.
+Deployed by GitHub Pages from main (root) and served at https://everlanerealty.com through Cloudflare.
+Edit in the preview repo, verify (npm run check), then port with the engagement go-live script.

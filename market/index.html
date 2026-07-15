@@ -1,0 +1,201 @@
+<!doctype html><html lang="en" data-preview="false">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>St. Petersburg Market Data · Everlane Realty</title>
+  <meta name="description" content="St. Petersburg housing market data — median price, days on market, inventory — from Everlane&#39;s own copy of the MLS data, with a monthly broker read. Real data or nothing, never estimates.">
+  
+  <link rel="canonical" href="https://everlanerealty.com/market/">
+  <meta property="og:site_name" content="Everlane Realty">
+  <meta property="og:title" content="St. Petersburg Market Data">
+  <meta property="og:description" content="St. Petersburg housing market data — median price, days on market, inventory — from Everlane&#39;s own copy of the MLS data, with a monthly broker read. Real data or nothing, never estimates.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://everlanerealty.com/market/"><meta property="og:image" content="https://everlanerealty.com/assets/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Everlane Realty — St. Petersburg & Tampa Bay real estate, with broker Serge Osaulenko">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="St. Petersburg Market Data">
+  <meta name="twitter:description" content="St. Petersburg housing market data — median price, days on market, inventory — from Everlane&#39;s own copy of the MLS data, with a monthly broker read. Real data or nothing, never estimates.">
+  <meta name="twitter:image" content="https://everlanerealty.com/assets/og-card.jpg">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/tokens.css">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://everlanerealty.com/" },
+      { "@type": "ListItem", "position": 2, "name": "St. Petersburg Market Data", "item": "https://everlanerealty.com/market/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a><header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="brand__name">Everlane Realty</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" data-nav-toggle>&#9776;</button>
+      <nav class="nav" data-nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/search/">Search homes</a>
+        <a href="/valuation/">Home value</a>
+        <a href="/neighborhoods/">Neighborhoods</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about/">About</a>
+        <a href="/ask/" class="nav__lane">Ask Lane</a>
+        <a class="nav__cta" href="/contact/">Book a consult</a>
+      </nav>
+    </div>
+  </header><main id="main">
+    <section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">The numbers, honestly</p>
+    <h1>St. Petersburg market data</h1>
+    <p class="lede lede--wide">Real market numbers &mdash; median price, days on market, inventory &mdash;
+    computed from Everlane&rsquo;s own copy of the MLS feed, never a syndicated estimate, with a monthly
+    plain-language read from the broker. The data feed is being connected; until it&rsquo;s live, this page
+    shows nothing rather than a guess.</p>
+    <p class="byline">Maintained by <strong>Serge Osaulenko</strong>, Broker &middot; real data or nothing &mdash; never an estimate</p>
+  </div>
+</section>
+
+<section class="databand" data-sec="databand" aria-label="Market snapshot">
+  <div class="databand__in">
+    <div class="databand__head">
+      <h2>The market, plainly read</h2>
+      <p class="databand__stamp">live data connecting</p>
+    </div>
+    <p class="databand__pending">This band shows real market numbers &mdash; median sale price, days
+    on market, active inventory &mdash; computed over Everlane&rsquo;s own copy of the Stellar MLS data,
+    with the computation time shown. Live numbers publish here as soon as the data feed is connected;
+    until then we show you nothing rather than a made-up number.</p><p class="databand__note">Based on information from Stellar MLS® for the period shown with each statistic — median sale price and days on market: trailing 90 days; active listings and months of supply: as of the computation time shown.</p>
+    <p class="databand__credit"><a href="/ai/">Built by Selenko, Everlane&rsquo;s own studio automation &mdash; see how this site runs &rarr;</a></p>
+  </div>
+</section>
+
+
+<section class="section" data-sec="method">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="no">The apparatus</span><h2>Where do these numbers come from?</h2></div></div>
+    <div class="prose prose--kb">
+      <p>Most market-stat pages are syndicated widgets. This one won&rsquo;t be. Everlane is standing up
+      its own data pipeline: once the MLS data feed is connected, listings will flow from
+      <strong>Stellar MLS</strong> into our own database through the day, and the statistics on this page
+      will be computed there by database queries &mdash; median sale price, days on market, active
+      inventory, months of supply &mdash; then baked into this page as plain HTML with the computation
+      time shown.</p>
+      <p>Three commitments, permanent:</p>
+      <ul>
+        <li><strong>No AI-generated numbers.</strong> An AI model never computes or estimates a
+        statistic here. Models draft narrative (below) from the computed numbers; the numbers
+        themselves are SQL over the feed, every time.</li>
+        <li><strong>Real data or nothing.</strong> If the pipeline hasn&rsquo;t run, the band above
+        shows no figures &mdash; you will never see a placeholder number dressed up as data.</li>
+        <li><strong>Visible timestamps.</strong> Every stat surface names its computation time and
+        the period it covers, per MLS display rules.</li>
+      </ul>
+      <p><a href="/ai/">See how this site runs &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" data-sec="narrative" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="no">The read</span><h2>What do the numbers mean this month?</h2></div></div>
+    <div class="prose prose--kb">
+      <p>The monthly narrative &mdash; a plain-language read of what moved and why it matters if
+      you&rsquo;re buying or selling right now &mdash; publishes here once the data pipeline connects.
+      It&rsquo;s drafted from the computed stats and <strong>reviewed and merged by the broker before
+      it appears</strong>; if it isn&rsquo;t reviewed, it doesn&rsquo;t publish. The stats above follow
+      their own rule either way &mdash; real numbers or nothing, never an estimate.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" data-sec="readnext" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="no">Keep reading</span><h2>Read next</h2></div></div>
+    <div class="readnext">
+      <article class="guide guide--flag">
+        <span class="g-eyebrow">The flagship</span>
+        <h3>Flood zones &amp; insurance in St. Pete</h3>
+        <p>The question under every offer in this city &mdash; zones, the Citizens mandate, and what coverage really costs after 2024.</p>
+        <a href="/guides/flood-zones-insurance-st-pete/">Read the guide</a>
+      </article>
+      <article class="guide">
+        <span class="g-eyebrow">Neighborhoods</span>
+        <h3>The neighborhood chapters</h3>
+        <p>Narrative, live stats, and the flood story &mdash; one real page per neighborhood.</p>
+        <a href="/neighborhoods/">Open the chapters</a>
+      </article>
+      <article class="guide">
+        <span class="g-eyebrow">Your number</span>
+        <h3>What&rsquo;s your home worth?</h3>
+        <p>An honest range, signed by the broker &mdash; not an instant estimate.</p>
+        <a href="/valuation/">Start the valuation</a>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="book" data-sec="booking">
+  <h2>Want the numbers read for your situation?</h2>
+  <p>Buying or selling, the market read is different — fifteen minutes, free, current data on the table.</p>
+  <div class="slots">
+    <button class="slot" type="button" data-cal-link="serge-osaulenko/30min" data-cal-config='{"layout":"month_view"}'>Pick a time &rarr;</button>
+  </div>
+  <p class="fine">A free 30-minute consult, straight onto Serge&rsquo;s calendar. Prefer to write first? <a href="/contact/" style="color:inherit">use the contact page &rarr;</a></p>
+  <script>
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", { origin: "https://cal.com" });Cal("ui", { cssVarsPerTheme: { light: { "cal-brand": "#3E5C43" } }, hideEventTypeDetails: false, layout: "month_view" });
+Cal("on", { action: "bookingSuccessful", callback: function () { if (window.elTrack) elTrack("book_appointment", { method: "calcom" }); } });
+</script>
+
+</section>
+
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brandrow">
+      <span class="b">Everlane Realty</span>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/search/">Search homes</a>
+        <a href="/valuation/">Home value</a>
+        <a href="/market/">Market data</a>
+        <a href="/neighborhoods/">Neighborhoods</a>
+        <a href="/guides/">Guides</a>
+        <a href="/ask/">Ask Lane</a>
+        <a href="/team/serge-osaulenko/">Meet Serge</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/dmca/">DMCA</a>
+        <a href="/accessibility/">Accessibility</a>
+        <a href="/ai/">/ai — how this site runs</a>
+      </nav>
+    </div><p class="footer__studio">Run by Selenko, Everlane&rsquo;s own studio automation &mdash; every client-facing decision is the broker&rsquo;s. <a href="/ai/">See how this site runs &rarr;</a></p>
+    <p class="footer__nap">
+      Everlane Realty &middot; 447 3rd Ave N, Ste. 306, St. Petersburg, FL 33701 &middot;
+      <a href="tel:+17274908037">727-490-8037</a> &middot;
+      <a href="mailto:serge@everlanerealty.com">serge@everlanerealty.com</a> &middot;
+      Serge Osaulenko, Licensed Real Estate Broker &middot; License #BK3384892
+    </p>
+    <div class="footer__legal">
+  <p><span class="eh">EQUAL HOUSING</span>Equal Housing Opportunity. We are committed to the letter and spirit of U.S. fair housing law.</p><p>Listings courtesy of Stellar MLS, provided via IDX Broker. All information deemed reliable but not guaranteed.</p><p>Everlane Realty is an Equal Housing Opportunity brokerage. We do not discriminate, and do not facilitate discrimination, on the basis of race, color, religion, sex, disability, familial status, or national origin &mdash; the classes protected by the federal Fair Housing Act &mdash; or any additional class protected under Florida law. All advertised properties are subject to these laws.</p>
+  <p>&copy; <span data-year>2026</span> Everlane Realty. Brokerage identification per FREC 61J2&#8209;10.025. MLS listing content is provided by IDX Broker and the participating MLS, and is the property of the MLS.</p>
+</div>
+
+  </div>
+</footer>
+
+
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>

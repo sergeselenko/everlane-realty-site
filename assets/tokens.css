@@ -1,0 +1,33 @@
+/* ==========================================================================
+   DESIGN TOKENS — BUILD-GENERATED from src/_data/tokens.js. DO NOT EDIT.
+   STATUS: LOCKED — C · St. Pete Editorial (operator lock 2026-07-07; rationale.md §6; verify-byline amendment lands in templates, not tokens)
+   ========================================================================== */
+:root {
+  --c-bg: #FAFAF6;
+  --c-ink: #22261F;
+  --c-sub: #5F6458;
+  --c-pink: #C98A8F;
+  --c-pinkdeep: #9E4A52;
+  --c-palm: #3E5C43;
+  --c-paper: #F5F5F1;
+  --c-paper-deep: #EDEDE7;
+  --c-line: #DDDACE;
+  --c-dark-sub: #C2C6B8;
+  --navy: var(--c-ink);
+  --navy-2: var(--c-palm);
+  --ink: var(--c-ink);
+  --slate: var(--c-sub);
+  --mist: var(--c-paper);
+  --line: var(--c-line);
+  --accent: var(--c-palm);
+  --accent-dk: var(--c-palm);
+  --eyebrow: var(--c-pinkdeep);
+  --white: var(--c-bg);
+  --ok: #276749;
+  --err: #9B2C2C;
+  --font: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-display: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --radius: 0;
+  --shadow: none;
+  --wrap: 1040px;
+}

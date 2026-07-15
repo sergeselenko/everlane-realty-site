@@ -1,0 +1,144 @@
+<!doctype html><html lang="en" data-preview="false">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How This Site Runs · Everlane Realty</title>
+  <meta name="description" content="The colophon: how Everlane Realty&#39;s site runs itself — the data pipeline, what the automation does, what the broker decides, and the honest guardrails.">
+  
+  <link rel="canonical" href="https://everlanerealty.com/ai/">
+  <meta property="og:site_name" content="Everlane Realty">
+  <meta property="og:title" content="How This Site Runs">
+  <meta property="og:description" content="The colophon: how Everlane Realty&#39;s site runs itself — the data pipeline, what the automation does, what the broker decides, and the honest guardrails.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://everlanerealty.com/ai/"><meta property="og:image" content="https://everlanerealty.com/assets/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Everlane Realty — St. Petersburg & Tampa Bay real estate, with broker Serge Osaulenko">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How This Site Runs">
+  <meta name="twitter:description" content="The colophon: how Everlane Realty&#39;s site runs itself — the data pipeline, what the automation does, what the broker decides, and the honest guardrails.">
+  <meta name="twitter:image" content="https://everlanerealty.com/assets/og-card.jpg">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/tokens.css">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://everlanerealty.com/" },
+      { "@type": "ListItem", "position": 2, "name": "How This Site Runs", "item": "https://everlanerealty.com/ai/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a><header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="brand__name">Everlane Realty</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" data-nav-toggle>&#9776;</button>
+      <nav class="nav" data-nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/search/">Search homes</a>
+        <a href="/valuation/">Home value</a>
+        <a href="/neighborhoods/">Neighborhoods</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about/">About</a>
+        <a href="/ask/" class="nav__lane">Ask Lane</a>
+        <a class="nav__cta" href="/contact/">Book a consult</a>
+      </nav>
+    </div>
+  </header><main id="main">
+    <section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">The receipts</p>
+    <h1>How this site runs</h1>
+    <p class="lede lede--wide">This site is operated by Selenko, Everlane&rsquo;s own studio automation. The listing data refreshes itself from the MLS; the market numbers are computed by a database, never guessed by a model; the pages regenerate on every deploy; and every client-facing word is the broker&rsquo;s. Here&rsquo;s exactly how &mdash; because a site that claims to be honest about data should be able to show its work.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:10px">
+  <div class="wrap">
+    <h2>The pipeline</h2>
+    <div class="prose prose--kb" style="margin-top:8px">
+      <ol>
+        <li><strong>The data comes straight from the MLS.</strong> Listings arrive through MLS GRID&rsquo;s licensed data feed &mdash; the same source the MLS itself publishes &mdash; refreshed every few hours. Nothing here is typed in by hand or scraped off another site.</li>
+        <li><strong>A private mirror keeps it current.</strong> Each refresh updates our own copy of the listings; when the MLS changes or removes a listing, the mirror follows in the same cycle, so what you see tracks what&rsquo;s actually on the market.</li>
+        <li><strong>Every market number is computed, not estimated.</strong> Medians, counts, and the other market figures are calculated by the database in plain arithmetic over real records &mdash; an AI model never writes a market number. If the data isn&rsquo;t there yet, the page shows nothing rather than a made-up figure.</li>
+        <li><strong>The whole site rebuilds itself.</strong> When the data changes, every page is regenerated from scratch and redeployed &mdash; timestamped, so you can see how fresh each number is. There is no live database call between you and a stale page; the page you load was already rebuilt with the latest data.</li>
+        <li><strong>A watchdog checks it hourly.</strong> A separate monitor confirms the feed is healthy every hour. If a refresh ever fails and the data goes stale, the site says so out loud &mdash; a visible banner &mdash; instead of quietly showing yesterday&rsquo;s numbers as if they were today&rsquo;s.</li>
+      </ol>
+      <p style="color:var(--c-sub)">The broker&rsquo;s entire monitoring duty is a short weekly digest of the pipeline&rsquo;s health. The machine does the watching; a person reads one email.</p>
+    </div>
+
+    <h2 style="margin-top:40px">Live counters</h2>
+    <p class="lede" style="margin-top:6px">These fill in the moment the live MLS feed connects. Until then they stay empty on purpose &mdash; the same rule the whole site runs on: show you nothing before we&rsquo;ll show you a number we can&rsquo;t stand behind.</p>
+    <div class="grid grid--2" style="margin-top:16px">
+      <div class="card"><strong>Listings synced today</strong><p style="margin:6px 0 0"><span class="stub-note">Live when the feed connects</span></p></div>
+      <div class="card"><strong>Pages refreshed on last deploy</strong><p style="margin:6px 0 0"><span class="stub-note">Live when the feed connects</span></p></div>
+      <div class="card"><strong>AI drafts reviewed by the broker</strong><p style="margin:6px 0 0"><span class="stub-note">Live once draft-tracking is wired</span></p></div>
+      <div class="card"><strong>Feed freshness</strong><p style="margin:6px 0 0"><span class="stub-note">Live when the feed connects</span></p></div>
+    </div>
+
+    <h2 style="margin-top:40px">What the automation never does</h2>
+    <div class="prose prose--kb" style="margin-top:8px">
+      <ul>
+        <li><strong>It never publishes on its own.</strong> The studio&rsquo;s tools research and draft the guides and neighborhood chapters &mdash; but they never hit publish. Every change to what this site <em>says</em> is reviewed, edited, and merged by the broker before it goes live, one change at a time. No words reach you that a person didn&rsquo;t read, approve, and put his name to.</li>
+        <li><strong>It never makes up a market number.</strong> Prices, medians, and counts are arithmetic done by the database over real MLS records. A model is never in that path. Missing data renders as an honest blank, not an estimate.</li>
+        <li><strong>It never invents an answer.</strong> The AI concierge answers only from this site&rsquo;s own published knowledge base &mdash; it cannot reach beyond it, and it cannot guess. When it doesn&rsquo;t know, it says so and points you to the broker.</li>
+        <li><strong>It never profiles who should live somewhere.</strong> Every neighborhood page describes the <em>place</em> &mdash; its features, its flood story, its housing stock &mdash; never the kind of person who &ldquo;belongs&rdquo; there. That&rsquo;s a fair-housing line the content is built to and checked against automatically.</li>
+        <li><strong>It never stores private party data.</strong> Seller and occupant private fields from the MLS feed are stripped at the source, before anything is saved &mdash; they never reach this site or any tool behind it.</li>
+        <li><strong>It runs under a cap and a log.</strong> The AI concierge operates under a hard spending limit with every query recorded &mdash; so it can be audited and can never quietly run away. (Site analytics already collect no personal information.)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:28px">
+      <p style="margin:0">This is a working brokerage site operated by a real broker &mdash; the automation exists to keep the data honest and current, not to replace the person you&rsquo;ll actually work with. <a href="/team/serge-osaulenko/">Meet the broker &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brandrow">
+      <span class="b">Everlane Realty</span>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/search/">Search homes</a>
+        <a href="/valuation/">Home value</a>
+        <a href="/market/">Market data</a>
+        <a href="/neighborhoods/">Neighborhoods</a>
+        <a href="/guides/">Guides</a>
+        <a href="/ask/">Ask Lane</a>
+        <a href="/team/serge-osaulenko/">Meet Serge</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/dmca/">DMCA</a>
+        <a href="/accessibility/">Accessibility</a>
+        <a href="/ai/">/ai — how this site runs</a>
+      </nav>
+    </div><p class="footer__studio">Run by Selenko, Everlane&rsquo;s own studio automation &mdash; every client-facing decision is the broker&rsquo;s. <a href="/ai/">See how this site runs &rarr;</a></p>
+    <p class="footer__nap">
+      Everlane Realty &middot; 447 3rd Ave N, Ste. 306, St. Petersburg, FL 33701 &middot;
+      <a href="tel:+17274908037">727-490-8037</a> &middot;
+      <a href="mailto:serge@everlanerealty.com">serge@everlanerealty.com</a> &middot;
+      Serge Osaulenko, Licensed Real Estate Broker &middot; License #BK3384892
+    </p>
+    <div class="footer__legal">
+  <p><span class="eh">EQUAL HOUSING</span>Equal Housing Opportunity. We are committed to the letter and spirit of U.S. fair housing law.</p><p>Listings courtesy of Stellar MLS, provided via IDX Broker. All information deemed reliable but not guaranteed.</p><p>Everlane Realty is an Equal Housing Opportunity brokerage. We do not discriminate, and do not facilitate discrimination, on the basis of race, color, religion, sex, disability, familial status, or national origin &mdash; the classes protected by the federal Fair Housing Act &mdash; or any additional class protected under Florida law. All advertised properties are subject to these laws.</p>
+  <p>&copy; <span data-year>2026</span> Everlane Realty. Brokerage identification per FREC 61J2&#8209;10.025. MLS listing content is provided by IDX Broker and the participating MLS, and is the property of the MLS.</p>
+</div>
+
+  </div>
+</footer>
+
+
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>
